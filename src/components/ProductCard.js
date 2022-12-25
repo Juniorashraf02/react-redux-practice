@@ -21,7 +21,7 @@ const ProductsCard = ({ products }) => {
         <div className=" flex-1">
           <ul className="space-y-2">
             {products.keyFeature.map((feature) => {
-              return <li className="text-sm " key={feature._id}>{feature}</li>;
+              return <li className="text-sm " key={feature}>{feature}</li>;
             })}
           </ul>
         </div>
