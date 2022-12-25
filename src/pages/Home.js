@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import ProductsCard from "../components/ProductCard";
 
 const Home = () => {
@@ -11,7 +12,9 @@ const Home = () => {
       .then((data) => setProducts(data));
   }, []);
 
-  console.log(products);
+  const state = useSelector(state=>state);
+
+  console.log(state);
 
   return <div className="grid grid-cols-3 gap-10">
     {
