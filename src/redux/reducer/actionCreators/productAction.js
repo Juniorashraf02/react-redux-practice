@@ -9,3 +9,10 @@ export const addToCart = (product) =>{
 
     }
 }
+export const removeFromCart = (product) =>{
+    return{
+        type: actionTypes.REMOVE_FROM_CART,
+        payload: product
+
+    }
+}
