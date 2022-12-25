@@ -20,7 +20,7 @@ const ProductProvider = ({ children }) => {
   console.log(state);
   useEffect(() => {
     dispatch({ type: actionTypes.FETCHING_START });
-    fetch("http://localhost:5000/items")
+    fetch("https://productdemo.onrender.com/items")
       .then((response) => response.json())
       .then((data) =>
         dispatch({ type: actionTypes.FETCHING_SUCCESS, payload: data })
